@@ -12,6 +12,6 @@ export class StaffService {
   }
 
   async findOptions() {
-    return this.staffRepository.getAttributes();
+    return Object.keys(this.staffRepository.getAttributes());
   }
 }

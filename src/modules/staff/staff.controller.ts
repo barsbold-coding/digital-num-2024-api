@@ -18,7 +18,7 @@ export class StaffController {
     return await this.staffService.findAll(query);
   }
 
-  @Options()
+  @Get('options')
   async findOptions() {
     return await this.staffService.findOptions();
   }
